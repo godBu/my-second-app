@@ -1,8 +1,24 @@
-import React from 'react';
-import logo from './logo.svg';
+import React, { Component } from 'react';
+//import logo from './logo.svg';
 import './App.css';
+import Student from './Components/Student'
 
-function App() {
+
+class App extends Component {
+  render() {
+    return (
+      <div className="App">
+        <h1>Bubu</h1>
+        <Student name="Bubu"/>
+      </div>
+    )
+  }
+}
+
+
+export default App;
+
+/*function App() {
   return (
     <div className="App">
       <header className="App-header">
@@ -21,6 +37,4 @@ function App() {
       </header>
     </div>
   );
-}
-
-export default App;
+}*/
