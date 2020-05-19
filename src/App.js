@@ -1,22 +1,12 @@
 import React, { Component } from 'react';
 import './App.css';
-//import Navbar from './Components/Navbar';
-//import About from './Components/About';
-//import Employments from './Components/Employments';
-//import Projects from './Components/Projects';
-//import Contacts from './Components/Contacts';
-//import Footer from './Components/Footer';
+import Navbar from './Components/Navbar';
 
 class App extends Component {
   render() {
     return (
       <div className="App">
-        {/*<Navbar />
-        <About />
-        <Employments />
-        <Projects />
-        <Contacts />
-        <Footer />*/}
+        <Navbar />
       </div>
     );
   }

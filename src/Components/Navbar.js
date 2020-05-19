@@ -1,20 +1,19 @@
 import React from 'react';
 import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
-import App from '../App';
+import Home from './Home'
 import About from './About';
-import Employments from './Components/Employments';
-import Projects from './Components/Projects';
-import Contacts from './Components/Contacts';
-import Footer from './Components/Footer';
+import Employments from './Employments';
+import Projects from './Projects';
+import Contacts from './Contacts';
+import Footer from './Footer';
 
 const Navbar = () => {
   return (
     <Router>
 
       <div>
-
+        
         <ul>
-
           <li>
             <Link to='/'>Home</Link> 
           </li>
@@ -38,13 +37,11 @@ const Navbar = () => {
           <li>
             <Link to='/footer'>Footer</Link> 
           </li>
-
         </ul>
 
         <Switch>
-
           <Route exact path='/'>
-            <App />
+            <Home />
           </Route>
 
           <Route path='/about'>
@@ -66,7 +63,6 @@ const Navbar = () => {
           <Route path='/footer'>
            <Footer />
           </Route>
-
         </Switch>
 
       </div>
