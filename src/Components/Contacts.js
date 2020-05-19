@@ -3,7 +3,9 @@ import React from 'react';
 const Contacts = (props) => {
     return (
         <div>
-            <form>Email: {props.email}</form>
+            <form>
+                <div>Email: {props.email}</div>
+            </form>
         </div>
     );
 }
