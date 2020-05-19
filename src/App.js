@@ -1,20 +1,26 @@
 import React, { Component } from 'react';
-//import logo from './logo.svg';
 import './App.css';
-import Student from './Components/Student'
-
+//import Navbar from './Components/Navbar';
+//import About from './Components/About';
+//import Employments from './Components/Employments';
+//import Projects from './Components/Projects';
+//import Contacts from './Components/Contacts';
+//import Footer from './Components/Footer';
 
 class App extends Component {
   render() {
     return (
       <div className="App">
-        <h1>Bubu</h1>
-        <Student name="Bubu"/>
+        {/*<Navbar />
+        <About />
+        <Employments />
+        <Projects />
+        <Contacts />
+        <Footer />*/}
       </div>
-    )
+    );
   }
 }
-
 
 export default App;
 
