@@ -1,13 +1,47 @@
 import React, { Component } from 'react';
-import './App.css';
+import { BrowserRouter, Switch, Route } from 'react-router-dom';
 import Navbar from './Components/Navbar';
+import Home from './Components/Home'
+import About from './Components/About';
+import Employments from './Components/Employments';
+import Projects from './Components/Projects';
+import Contacts from './Components/Contacts';
+import Footer from './Components/Footer';
+
+import './App.css';
 
 class App extends Component {
   render() {
     return (
+      <BrowserRouter>
       <div className="App">
-        <Navbar />
+        <Navbar /> {/*Navbar goes on top*/}
+
+        <Switch>
+          <Route exact path='/'> {/*Switch in the middle*/}
+            <Home />
+          </Route>
+
+          <Route path='/about'>
+           <About name="Anthony Edward Stark"/>
+          </Route>
+
+          <Route path='/employments'>
+           <Employments jobtitle="CEO Stark Industries"/>
+          </Route>
+
+          <Route path='/projects'>
+           <Projects title="Proton Cannon"/>
+          </Route>
+
+          <Route path='/contacts'>
+           <Contacts email="rockymmpr@gmail.com"/>
+          </Route>
+        </Switch>
+
+           <Footer /> {/**Footer goes at the bottom*/}
       </div>
+      </BrowserRouter>
     );
   }
 }
