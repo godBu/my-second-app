@@ -6,29 +6,12 @@ const Navbar = () => {
   return (
       <div>      
         <ul>
-          <li>
-            <Link to='/'>Home</Link> 
-          </li>
-
-          <li>
-            <Link to='/about'>About</Link> 
-          </li>
-
-          <li>
-            <Link to='/employments'>Employments</Link> 
-          </li>
-
-          <li>
-            <Link to='/projects'>Projects</Link> 
-          </li>
-
-          <li>
-            <Link to='/contacts'>Contacts</Link> 
-          </li>
-
-          <li>
-            <Link to='/footer'>Footer</Link> 
-          </li>
+          <li><Link to='/'>Home</Link></li>
+          <li><Link to='/about'>About</Link></li>
+          <li><Link to='/employments'>Employments</Link></li>
+          <li><Link to='/projects'>Projects</Link></li>
+          <li><Link to='/contacts'>Contacts</Link></li>
+          <li><Link to='/footer'>Footer</Link></li>
         </ul>
       </div>
   );
